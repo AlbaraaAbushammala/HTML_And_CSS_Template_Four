@@ -1,58 +1,127 @@
+:root {
+    --blue-color: #0075ff ;
+    --blue-alt-color: #0d69d5 ;
+    --orange-color: #f59e0b ;
+    --green-color: #22c55e ;
+    --red-color: #f44336 ;
+    --grey-color: #888 ;  
+}
+
+
+
 /* Start Box */
 .d-flex {
     display: flex;
 }
-
 .align-center {
     align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+.d-block {
+    display: block;
+}
+@media (max-width:767px) {
+    .block-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
 }
 /* End Box */
 
 /* Start Padding + Margin  */
-
 .p-10 {
     padding: 10px;
 }
-
+.p-15 {
+    padding: 15px;
+}
 .p-20 {
     padding: 20px;
 }
 
 .m-20 {
-    padding: 20px;
+    margin: 20px;
 }
-
 .mt-0 {
     margin-top: 0;
 }
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
 /* End Padding + Margin  */
+
+
+/* Start Width */
+.w-full {
+    width: 100%;
+}
+.w-fit {
+    width: fit-content;
+}
+/* End Width */
+
 
 /* Start Color  */
 .bg-white {
     background-color: white;
 }
-
+.bg-eee {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
 .c-black {
     color: black;
 }
+.c-white {
+    color: white;
+}
+.c-grey {
+    color: var(--grey-color);
+}
 /* End Color  */
 
-/* Start Position  */
 
+
+/* Start Position  */
 .p-relative {
     position: relative;
 }
 /* End Position  */
 
+
 /* Start Fonts  */
 .text-center {
     text-align: center;
 }	
-
 .fs-14 {
     font-size: 14px;
 }
-
+@media (max-width:767px) {
+    .text-c-mobile {
+        text-align: center;
+    }
+}
 /* End Fonts  */
 
 
@@ -60,4 +129,40 @@
 .rad-6 {
     border-radius: 6px;
 }
+
+.rad-10 {
+    border-radius: 10px;
+}
 /* End Border */
+
+
+/* Start Components */
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-title {
+    margin: 20px 20px 40px ;
+}
+.main-title::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background-color: white;
+    width: 120px;
+    border-radius: 3px;
+}
+.main-title::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background-color: black;
+    width: 40px;
+    border-radius: 3px;
+}
+/* End Components */
