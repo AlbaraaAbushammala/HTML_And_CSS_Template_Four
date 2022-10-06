@@ -64,6 +64,9 @@
 .mt-20 {
     margin-top: 20px;
 }
+.mb-10 {
+    margin-bottom: 10px;
+}
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -117,6 +120,9 @@
 .fs-14 {
     font-size: 14px;
 }
+.fs-15 {
+    font-size: 15;
+}
 @media (max-width:767px) {
     .text-c-mobile {
         text-align: center;
@@ -132,6 +138,9 @@
 
 .rad-10 {
     border-radius: 10px;
+}
+.b-none {
+    border: none;
 }
 /* End Border */
 
@@ -164,5 +173,10 @@
     background-color: black;
     width: 40px;
     border-radius: 3px;
+}
+
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
 }
 /* End Components */

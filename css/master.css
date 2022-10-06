@@ -258,11 +258,24 @@ ul {
   .welcome .body > div span {
     margin-top: 5px;
   }
-
 }
 /* End Welcome Widget */
 
+/* Start Quick Draft Widget */
+.quick-draft form textarea {
+  height: 150px;
+  resize: none;
+}
 
+.quick-draft .save {
+  margin-left: auto;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}
+/* End Quick Draft Widget */
 
 /* Start Page */
 /* End Page */
